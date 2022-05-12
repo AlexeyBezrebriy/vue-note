@@ -2,8 +2,4 @@
 
 <template></template>
 
-<style>
-  * {
-    margin: 0;
-  }
-</style>
+<style></style>
