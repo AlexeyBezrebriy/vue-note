@@ -2,9 +2,9 @@
   <div>
     <nav class="menu">
       <ul class="menu__items">
-        <li class="menu__item">Vue-Notes</li>
-        <li class="menu__item">Notes</li>
-        <li class="menu__item">Information</li>
+        <li class="menu__item"><a href="#">Vue-Notes</a></li>
+        <li class="menu__item"><a href="#">Notes</a></li>
+        <li class="menu__item"><a href="#">Information</a></li>
       </ul>
     </nav>
   </div>
@@ -14,17 +14,21 @@
   export default {}
 </script>
 
-<style>
+<style scoped>
+  a {
+    color: black;
+    text-decoration: none;
+  }
   .menu {
     background-color: #42d392;
     height: 2rem;
   }
   .menu__items {
-    height: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    /* justify-content: start; */
     align-items: center;
+    padding: 0.5rem;
   }
   .menu__item {
     display: block;
