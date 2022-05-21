@@ -2,9 +2,9 @@
   <div>
     <li class="note-item">
       <span>
-        <strong>{{ index }}</strong>
+        <strong>{{ index + 1 }}</strong>
         {{ note.title }}
-        <span>{{ note.id }}</span>
+        <span>{{ Date() }}</span>
       </span>
       <button class="btn-delete" @click="$emit('remove-note', note.id)">
         &times;
